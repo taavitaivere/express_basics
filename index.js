@@ -6,7 +6,7 @@ const bodyParser = require('path')
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('views engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.get('/login', (req, res)=> {
     res.render('index', 'login');
